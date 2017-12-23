@@ -2,8 +2,7 @@
 
 // callback.php
 
-$accessToken = 'v7aoaesRYrsd5s/9K8Ad7uH53/Tws/ewEWwDjJc3MuWOjbC/PRcVG1ZWorOZfvNzEg4NZ3eGO/iYAcnY2NT6gU5UEv7Uli0zamiRIxGM8e7sA0Up+tdAS6aUOkoE9rhs9H+AOe3eIMHKl/7Vr71uLAdB04t89/1O/w1cDnyilFU=
-';
+$accessToken = 'v7aoaesRYrsd5s/9K8Ad7uH53/Tws/ewEWwDjJc3MuWOjbC/PRcVG1ZWorOZfvNzEg4NZ3eGO/iYAcnY2NT6gU5UEv7Uli0zamiRIxGM8e7sA0Up+tdAS6aUOkoE9rhs9H+AOe3eIMHKl/7Vr71uLAdB04t89/1O/w1cDnyilFU=';
 
 $jsonString = file_get_contents('php://input');
 error_log($jsonString);
