@@ -36,7 +36,7 @@ app.post('/callback', function(req, res){
             var gnavi_url = 'http://api.gnavi.co.jp/RestSearchAPI/20150630/';
             // ぐるなび リクエストパラメータの設定
             var gnavi_query = {
-                "keyid":"<ぐるなびのアクセスキー>",
+                "keyid":"198d3912d63f7394f59748a3a797e742",
                 "format": "json",
                 "address": search_place_array[0],
                 "hit_per_page": 1,
