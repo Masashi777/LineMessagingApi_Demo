@@ -123,10 +123,10 @@ if ($message->{"text"} == '確認') {
 	
 } else {
     // それ以外は送られてきたテキストをオウム返し
-    $messageData = [
+    /*$messageData = [
         'type' => 'text',
         'text' => 'そのメッセージには対応していません。正しいメッセージを入力してください。'
-    ];
+    ];*/
 }
 
 $response = [
