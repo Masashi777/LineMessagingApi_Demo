@@ -22,12 +22,12 @@ if ($message->{"text"} == '確認') {
             'text' => '元気ですかー？',
             'actions' => [
                 [
-                    'type' => 'text',
+                    'type' => 'message',
                     'label' => '元気です',
                     'text' => '元気で何よりです'
                 ],
                 [
-                    'type' => 'text',
+                    'type' => 'message',
                     'label' => 'まあまあです',
                     'text' => 'まあまあですか、がんばってください！'
                 ],
@@ -102,19 +102,19 @@ if ($message->{"text"} == '確認') {
 					'text' => 'カルーセル3',
 					'actions' => [
 						[
-							'type' => 'message',
+							'type' => 'postback',
 							'label' => '確認',
-							'text' => '確認'
+							'valu' => '確認'
 						],
 						[
-							'type' => 'message',
+							'type' => 'postback',
 							'label' => 'ボタン',
-							'text' => 'ボタン'
+							'valu' => 'ボタン'
 						],
 						[
-							'type' => 'message',
+							'type' => 'postback',
 							'label' => 'ボタン',
-							'text' => 'ボタン'
+							'valu' => 'ボタン'
 						],
 					]
 				]
