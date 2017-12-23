@@ -115,7 +115,7 @@ if ($message->{"text"} == '確認') {
 							'type' => 'postback',
 							'label' => 'ボタン',
 							'data' => 'ボタン'
-						],
+						]
 					]
 				]
             ]
