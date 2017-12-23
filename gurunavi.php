@@ -76,7 +76,7 @@ function checkString($input)
 
 $messageData = [
 		'type' => 'text',
-		'text' => $restArray->{'name'}
+		'text' => $restArray->{'name'}."\t"
 	];
 
 $response = [
