@@ -22,14 +22,14 @@ if ($message->{"text"} == '確認') {
             'text' => '元気ですかー？',
             'actions' => [
                 [
-                    'type' => 'message',
+                    'type' => 'text',
                     'label' => '元気です',
-                    'text' => '元気でなによりです'
+                    'text' => '元気で何よりです'
                 ],
                 [
-                    'type' => 'message',
+                    'type' => 'text',
                     'label' => 'まあまあです',
-                    'text' => 'まあまあです、\nがんばってください！'
+                    'text' => 'まあまあですか、がんばってください！'
                 ],
             ]
         ]
@@ -102,12 +102,17 @@ if ($message->{"text"} == '確認') {
 					'text' => 'カルーセル3',
 					'actions' => [
 						[
-							'type' => 'text',
+							'type' => 'message',
 							'label' => '確認',
 							'text' => '確認'
 						],
 						[
-							'type' => 'text',
+							'type' => 'message',
+							'label' => 'ボタン',
+							'text' => 'ボタン'
+						],
+						[
+							'type' => 'message',
 							'label' => 'ボタン',
 							'text' => 'ボタン'
 						],
@@ -127,7 +132,7 @@ if ($message->{"text"} == '確認') {
     // それ以外は送られてきたテキストをオウム返し
     $messageData = [
         'type' => 'text',
-        'text' => 'そのメッセージには対応していません。' + n12br("\n") + '正しいメッセージを入力してください。'
+        'text' => 'そのメッセージには対応していません。正しいメッセージを入力してください。'
     ];
 }
 
