@@ -86,9 +86,9 @@ if ($message->{"text"} == '確認') {
                     'text' => 'カルーセル2',
                     'actions' => [
                         [
-                            'type' => 'url',
+                            'type' => 'uri',
                             'label' => 'Apple 公式ホームページ',
-                            'url' => 'https://www.apple.com/jp/'
+                            'uri' => 'https://www.apple.com/jp/'
                         ],
                         [
                             'type' => 'uri',
