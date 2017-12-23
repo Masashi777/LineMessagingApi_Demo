@@ -96,28 +96,7 @@ if ($message->{"text"} == '確認') {
                             'uri' => 'https://www.apple.com/jp/imac-pro/'
                         ]
                     ]
-                ],
-				[
-					'title' => '選択したテキストを返す',
-					'text' => 'カルーセル3',
-					'actions' => [
-						[
-							'type' => 'postback',
-							'label' => '確認',
-							'data' => '確認'
-						],
-						[
-							'type' => 'postback',
-							'label' => 'ボタン',
-							'data' => 'ボタン'
-						],
-						[
-							'type' => 'postback',
-							'label' => 'ボタン',
-							'data' => 'ボタン'
-						]
-					]
-				]
+                ]
             ]
         ]
     ];
