@@ -2,7 +2,7 @@
 
 // callback.php
 
-$accessToken = 'Line Developersで発行したアクセストークン';
+$accessToken = '6806a82b74dbaaa0f266082026c9e466';
 
 $jsonString = file_get_contents('php://input');
 error_log($jsonString);
