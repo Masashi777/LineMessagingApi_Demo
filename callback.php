@@ -104,17 +104,17 @@ if ($message->{"text"} == '確認') {
 						[
 							'type' => 'postback',
 							'label' => '確認',
-							'valu' => '確認'
+							'data' => '確認'
 						],
 						[
 							'type' => 'postback',
 							'label' => 'ボタン',
-							'valu' => 'ボタン'
+							'data' => 'ボタン'
 						],
 						[
 							'type' => 'postback',
 							'label' => 'ボタン',
-							'valu' => 'ボタン'
+							'data' => 'ボタン'
 						],
 					]
 				]
