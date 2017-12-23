@@ -107,7 +107,21 @@ if ($message->{"text"} == '確認') {
 		'text' => '金沢壮真 19歳 男性'
 	];
 	
-}else {
+} elseif ($message->{"text"} == '本間健太郎') {
+	// ぶー
+	$messageData = [
+		'type' => 'text',
+		'text' => 'ぶーたんのばーか！'
+	];
+	
+} elseif ($message->{"text"} == '藤田智大') {
+	// ふじとも
+	$messageData = [
+		'type' => 'text',
+		'text' => 'えろいのだいすき大学生！'
+	];
+	
+} else {
     // それ以外は送られてきたテキストをオウム返し
     $messageData = [
         'type' => 'text',
