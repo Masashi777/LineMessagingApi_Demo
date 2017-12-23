@@ -57,7 +57,7 @@ if ($message->{"text"} == '確認') {
             ]
         ]
     ];
-} elseif ($message->{"text"} == 'カルーセル') {
+} elseif ($message->{"text"} == 'カルーセル' || $message->{"text"} == 'help') {
     // カルーセルタイプ
     $messageData = [
         'type' => 'template',
@@ -111,11 +111,6 @@ if ($message->{"text"} == '確認') {
 							'label' => 'ボタン',
 							'text' => 'ボタン'
 						],
-						[
-							'type' => 'text',
-							'label' => 'カルーテル',
-							'text' => 'カルーテル'
-						]
 					]
 				]
             ]
@@ -132,8 +127,7 @@ if ($message->{"text"} == '確認') {
     // それ以外は送られてきたテキストをオウム返し
     $messageData = [
         'type' => 'text',
-        'text' => 'そのメッセージには対応していません(sad)\n
-					正しいメッセージを入力してください(haha)'
+        'text' => 'そのメッセージには対応していません。' + n12br("\n") + '正しいメッセージを入力してください。'
     ];
 }
 
