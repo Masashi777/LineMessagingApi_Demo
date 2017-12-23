@@ -24,12 +24,12 @@ if ($message->{"text"} == '確認') {
                 [
                     'type' => 'message',
                     'label' => '元気です',
-                    'text' => '元気です'
+                    'text' => '元気でなによりです'
                 ],
                 [
                     'type' => 'message',
                     'label' => 'まあまあです',
-                    'text' => 'まあまあです'
+                    'text' => 'まあまあです、\nがんばってください！'
                 ],
             ]
         ]
@@ -66,7 +66,7 @@ if ($message->{"text"} == '確認') {
             'type' => 'carousel',
             'columns' => [
                 [
-                    'title' => 'カルーセル1',
+                    'title' => 'Google',
                     'text' => 'カルーセル1です',
                     'actions' => [
                         [
@@ -76,35 +76,64 @@ if ($message->{"text"} == '確認') {
                         ],
                         [
                             'type' => 'uri',
-                            'label' => '美容の口コミ広場を見る',
-                            'uri' => 'http://clinic.e-kuchikomi.info/'
+                            'label' => 'Google',
+                            'uri' => 'https://google.com'
                         ]
                     ]
                 ],
                 [
-                    'title' => 'カルーセル2',
-                    'text' => 'カルーセル2です',
+                    'title' => 'Apple',
+                    'text' => 'カルーセル2',
                     'actions' => [
                         [
-                            'type' => 'postback',
-                            'label' => 'webhookにpost送信',
-                            'data' => 'value'
+                            'type' => 'url',
+                            'label' => 'Apple 公式ホームページ',
+                            'url' => 'https://www.apple.com/jp/'
                         ],
                         [
                             'type' => 'uri',
-                            'label' => '女美会を見る',
-                            'uri' => 'https://jobikai.com/'
+                            'label' => 'iMac Pro 新登場',
+                            'uri' => 'https://www.apple.com/jp/imac-pro/'
                         ]
                     ]
                 ],
+				[
+					'title' => '選択したテキストを返す',
+					'text' => 'カルーセル3',
+					'actions' => [
+						[
+							'type' => 'text',
+							'label' => '確認',
+							'text' => '確認'
+						],
+						[
+							'type' => 'text',
+							'label' => 'ボタン',
+							'text' => 'ボタン'
+						],
+						[
+							'type' => 'text',
+							'label' => 'カルーテル',
+							'text' => 'カルーテル'
+						]
+					]
+				]
             ]
         ]
     ];
-} else {
+} elseif ($message->{"text"} == '金沢' || "壮真" || "かなざわ" || "そうま" || "金沢壮真") {
+	// そうま
+	$messageData = [
+		'type' => 'text',
+		'text' => '金沢壮真 19歳 男性'
+	];
+	
+}else {
     // それ以外は送られてきたテキストをオウム返し
     $messageData = [
         'type' => 'text',
-        'text' => $message->{"text"}
+        'text' => 'そのメッセージには対応していません(sad)\n
+					正しいメッセージを入力してください(haha)'
     ];
 }
 
