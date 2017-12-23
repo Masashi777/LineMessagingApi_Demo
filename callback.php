@@ -121,7 +121,7 @@ if ($message->{"text"} == '確認') {
             ]
         ]
     ];
-} elseif ($message->{"text"} == '金沢' || "壮真" || "かなざわ" || "そうま" || "金沢壮真") {
+} elseif ($message->{"text"} == '金沢' || $message->{"text"} == "壮真" || $message->{"text"} == "かなざわ" || $message->{"text"} == "そうま" || $message->{"text"} == "金沢壮真") {
 	// そうま
 	$messageData = [
 		'type' => 'text',
